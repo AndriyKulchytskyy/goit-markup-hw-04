@@ -1,0 +1,439 @@
+:root{
+    --main-font: 'Roboto', sans-serif;
+    --second-font: 'Raleway', sans-serif;
+    --main-color: #212121;
+    --second-color: #757575;
+    --accent-color: #2196F3;
+    --project-item-gap: 30px;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul,ol{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+img{
+    display: block;
+}
+
+.list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.link{
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+/* ============================== BODY ==============================*/
+body{
+    font-family: var(--main-font);
+}
+
+/* ============================== END BODY ==============================*/
+
+/* ============================== HEADER ==============================*/
+
+.inheader{
+    display: flex;
+    align-items: center;
+}
+
+.logo-link{
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19; 
+    letter-spacing: 0.03em;
+    color:#000000;
+}
+
+.logo-accent{
+    color: var(--accent-color);
+}
+
+.menu{
+    display: flex;
+    margin-left: 93px;
+}
+
+.menu-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;    
+    color: var(--main-color);
+}
+
+.menu-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.menu-link:hover,
+.menu-link:focus{
+    color: var(--accent-color);
+
+}
+
+.contacts{
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-item + .contacts-item{
+    margin-left: 50px;
+}
+.contacts-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus{
+    color: var(--accent-color);
+}
+/* ============================== END HEADER ==============================*/
+
+
+/* ============================== HERO ==============================*/
+.hero{
+    background-color:#2F303A;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-title{
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+
+.modal-btn{
+    display: inline-box;
+    padding: 9px 31px;
+
+    font-family: var(--main-font);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border:1px solid transparent;
+    border-radius: 4px;
+}
+
+.modal-btn:hover,
+.modal-btn:focus{
+    background-color: #188CE8;
+}
+/* ============================== END HERO ==============================*/
+
+/* ============================== ADVANTANGES ==============================*/
+.advantages{  
+    padding-top: 94px;  
+    padding-bottom: 94px;
+}
+.advantages-list{
+    display: flex;
+}
+
+.advantages-item{
+    width:270px;
+}
+.advantages-item:not(:last-child){
+    margin-right: 30px;
+
+}
+
+.advantages-item-title{
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.advantages-item-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+}
+/* ============================== END ADVANTANGES ==============================*/
+
+/* ==============================WHAT-WE-DO ==============================*/
+.works{
+    padding-bottom: 94px;    
+}
+.works-list{
+    display: flex;
+}
+.works-title{
+    margin-bottom: 50px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.workrs-item:not(:last-child){
+    margin-right: 30px;
+}
+
+/* ==============================END WHAT-WE-DO ==============================*/
+
+/* ==============================TEAM ==============================*/
+.team{
+    background-color: #f1f0f0;    
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.team-title{
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.team-list{
+    display: flex;
+}
+
+.team-item:not(:last-child){
+    margin-right: 30px;
+}
+
+/* .team-img{
+    margin-bottom: 30px;
+} */
+
+.team-img-thumb{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-img-title{
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.team-img-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+}
+/* ==============================END TEAM ==============================*/
+
+/* ============================== FOOTER ============================== */
+.footer{
+    background-color: #2F303A;    
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .logo-link{
+    display: inline-block;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.adr-item{
+    font-style: normal;
+}
+
+.adr-item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.adr-map{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:#fff;
+}
+
+.adr-mail{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 60%); 
+}
+
+.adr-tel{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 60%); 
+}
+
+.adr-map:hover,
+.adr-map:focus,
+.adr-mail:hover,
+.adr-mail:focus,
+.adr-tel:hover,
+.adr-tel:focus
+{
+    color: var(--accent-color);
+}
+/* ============================== END FOOTER ============================== */
+
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++    PORTFOLIO     +++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/* ============================== PAGE_NAVIGATION ============================== */
+.header{
+    border-bottom: 2px solid #ECECEC;
+}
+
+.projects{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.wiev{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;    
+}
+.wiev-btn{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 4px;
+    border:1px solid transparent;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    background: #F5F4FA;
+    cursor: pointer;
+}
+
+.wiev-item:not(:last-child){
+    margin-right: 8px;
+}
+
+.wiev-btn:hover,
+.wiev-btn:focus{
+    color: #FFFFFF;
+    background: var(--accent-color);  
+}
+/* ============================== END PAGE_NAVIGATION ============================== */
+
+/* ============================== PROJECTS ============================== */
+.projects-title{
+    display:none;
+}
+
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--project-item-gap));
+    margin-left: calc(-1*var(--project-item-gap));
+}
+
+.projects-list-item{   
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--project-item-gap);
+    margin-left: var(--project-item-gap);
+    flex-basis: calc(100% / 3 - var(--project-item-gap));
+
+    background: #FFFFFF;
+}
+
+.projects-img-thumb{
+    /* width: 368px; */
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+
+    border-left: 1px solid rgba(238, 238, 238, 1);
+    border-right: 1px solid rgba(238, 238, 238, 1);
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+.projects-img-title{
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+}
+
+.projects-img-text{
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+}
+
+/* ============================== END PROJECTS ============================== */
