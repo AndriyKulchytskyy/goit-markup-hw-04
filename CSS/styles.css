@@ -125,6 +125,11 @@ body{
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url(../images/hero/bg-picture.png);
+    background-size: 1600px 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .hero-title{
@@ -437,3 +442,17 @@ body{
 }
 
 /* ============================== END PROJECTS ============================== */
+
+
+/* ------------------SVG-------------------- */
+.svg-envelope{
+    width: 16px;
+    height: 12px;
+    fill: var(--second-color);
+    margin-right: 10px;
+}
+
+.svg-envelope:hover,
+.svg-envelope:focus{
+    fill: var(--accent-color); 
+}
