@@ -4,6 +4,16 @@
     --main-color: #212121;
     --second-color: #757575;
     --accent-color: #2196F3;
+    --bghero-color: #2F303A;
+    --hero-title-color: #FFFFFF;
+    --modal-btn-accent-color: #188CE8;
+    --thumb-bg-color: #f5f4fa;
+    --icon-socialmedia-color: #afb1b8;
+    --footer-bg-color: #2F303A;
+    --adr-contact-color: rgba(255, 255, 255, 60%);
+    --media-item-footer-bg-color: rgba(255, 255, 255, 0.1);
+    --logo-link-color: #000000;
+
     --project-item-gap: 30px;
 }
 
@@ -45,6 +55,8 @@ body{
 
 /* ============================== HEADER ==============================*/
 
+
+
 .inheader{
     display: flex;
     align-items: center;
@@ -56,7 +68,8 @@ body{
     font-size: 26px;
     line-height: 1.19; 
     letter-spacing: 0.03em;
-    color:#000000;
+    color:var(--logo-link-color);
+    padding: 24px 0px;
 }
 
 .logo-accent{
@@ -128,12 +141,21 @@ body{
 .contacts-link:focus .icon-header {
     fill: currentColor;
 }
+
+.current {
+    pointer-events: none;
+    color: var(--accent-color);
+}
+
+.header {
+    border-bottom: 2px solid #ECECEC;
+}
 /* ============================== END HEADER ==============================*/
 
 
 /* ============================== HERO ==============================*/
 .hero{
-    background-color:#2F303A;
+    background-color: var(--bghero-color);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -145,7 +167,9 @@ body{
         url(../images/hero/bg-picture.png);
     background-repeat: no-repeat;
     background-position: center;
-
+    background-size: cover;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title{
@@ -156,7 +180,7 @@ body{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color:#FFFFFF;
+    color:var(--hero-title-color);
 }
 
 .modal-btn{
@@ -169,15 +193,15 @@ body{
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--hero-title-color);
+    background-color: var(--accent-color);
     border:1px solid transparent;
     border-radius: 4px;
 }
 
 .modal-btn:hover,
 .modal-btn:focus{
-    background-color: #188CE8;
+    background-color: var(--modal-btn-accent-color);
 }
 /* ============================== END HERO ==============================*/
 
@@ -199,10 +223,11 @@ body{
 }
 
 .thumb {
+    margin-bottom: 30px;
     display: flex;
     width: 270px;
     height: 120px;
-    background-color: #f5f4fa;
+    background-color: var(--thumb-bg-color);
     border-radius: 4px;
     justify-content: center;
     align-items: center;
@@ -210,7 +235,6 @@ body{
 
 .advantages-item-title{
     margin-bottom: 10px;
-    margin-top: 30px;
 
     font-weight: 700;
     font-size: 14px;
@@ -260,7 +284,7 @@ body{
 
 /* ==============================TEAM ==============================*/
 .team{
-    background-color: #f5f4fa;
+    background-color: var(--thumb-bg-color);
     padding-bottom: 94px;
     padding-top: 94px;
 }
@@ -281,13 +305,8 @@ body{
     margin-right: 30px;
 }
 
-/* .team-img{
-    margin-bottom: 30px;
-} */
-
 .team-img-thumb{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 32px;
 }
 
 .team-img-title{
@@ -314,33 +333,48 @@ body{
 .socialmedia-list {
     display: flex;
     justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
 }
 
-.socialmedia-item {
+.socialmedia-link {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* border: 1px var(--icon-socialmedia-color) solid; */
+
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px var(--icon-socialmedia-color) solid;
+        border-radius: 4px; */
 }
 
-.socialmedia-item:hover,
-.socialmedia-item:focus {
-background-color: var(--accent-color);
+/* .socialmedia-link{
+    display: block;
+    width: auto;
+    height: auto;
+} */
+
+.socialmedia-link:hover,
+.socialmedia-link:focus{
+    outline: none;
+    background-color: var(--accent-color);
+    
 }
 
-.socialmedia-item:hover .icon-socialmedia,
-.socialmedia-item:focus .icon-socialmedia {
-    fill: #fff;
+.socialmedia-link:hover .icon-socialmedia,
+.socialmedia-link:focus .icon-socialmedia {
+    fill: var(--hero-title-color);
 }
 
 .icon-socialmedia {
     width: 20px;
     height: 20px;
-    fill: #afb1b8;
+    fill: var(--icon-socialmedia-color);
 }
 /* ==============================END TEAM ==============================*/
 
@@ -362,12 +396,13 @@ background-color: var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px #afb1b8 solid;
+    border: 1px var(--icon-socialmedia-color) solid;
     border-radius: 4px;
 }
 
 .clients-link:hover,
 .clients-link:focus{
+    outline: none;
     border: 1px var(--accent-color) solid;
 }
 
@@ -378,13 +413,13 @@ background-color: var(--accent-color);
 .icon-clients{
     width: 106px;
     height: 60px;
-    fill: #afb1b8;
+    fill: var(--icon-socialmedia-color);
 }
 /* ==============================END CLIENTS ==============================*/
 
 /* ============================== FOOTER ============================== */
 .footer{
-    background-color: #2F303A;
+    background-color: var(--footer-bg-color);
     display: flex;
     flex-direction: column;
     padding-top: 60px;
@@ -410,7 +445,7 @@ background-color: var(--accent-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 60%); 
+    color: var(--adr-contact-color);
 }
 
 .adr-contact:hover,
@@ -419,7 +454,7 @@ background-color: var(--accent-color);
 }
 
 .adr-map {
-    color: #fff;
+    color: var(--hero-title-color);
 }
 
 .footer-content{
@@ -428,6 +463,8 @@ background-color: var(--accent-color);
 }
 
 .footer-join{
+    width: 206px;
+    height: 80px;
     margin-left: 70px;
 }
 
@@ -439,23 +476,23 @@ background-color: var(--accent-color);
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #ffffff;    
+    color: var(--hero-title-color);    
 }
 
 .media-list-footer {
     padding: 0;
 }
 
-.media-item-footer{
-    background-color: rgba(255,255,255,0.1);
+.media-link-footer{
+    background-color: var(--media-item-footer-bg-color);
 }
 
-.media-item-footer:not(:last-child){
+.media-link-footer:not(:last-child){
     margin-right: 10px;
 }
 
 .icon-media-footer{
-    fill: #ffffff;
+    fill: var(--hero-title-color);
 }
 /* ============================== END FOOTER ============================== */
 
